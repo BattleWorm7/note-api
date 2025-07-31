@@ -1,24 +1,26 @@
-﻿# 1. Базовый образ .NET SDK
+﻿# Базовый образ для сборки
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# 2. Копируем всё из подпапки проекта
+# Копируем всё из репозитория
 COPY . .
 
-# 3. Переход в папку с .csproj
+# Переходим в папку, где .csproj файл
 WORKDIR /src/NoteManager
 
-# 4. Восстановление зависимостей
+# Восстановление зависимостей
 RUN dotnet restore
 
-# 5. Сборка и публикация
+# Сборка
 RUN dotnet publish -c Release -o /app/publish
 
-# 6. Runtime-образ
+# Runtime-образ
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
+
 COPY --from=build /app/publish .
 
+# Настройки для Render
 ENV ASPNETCORE_URLS=http://+:10000
 EXPOSE 10000
 
