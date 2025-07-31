@@ -1,21 +1,25 @@
-﻿# Используем официальный .NET SDK образ для сборки
+﻿# 1. Базовый образ .NET SDK
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /app
+WORKDIR /src
 
-# Копируем csproj и восстанавливаем зависимости
-COPY *.csproj ./
+# 2. Копируем всё из подпапки проекта
+COPY . .
+
+# 3. Переход в папку с .csproj
+WORKDIR /src/NoteManager
+
+# 4. Восстановление зависимостей
 RUN dotnet restore
 
-# Копируем остальной код и собираем
-COPY . ./
-RUN dotnet publish -c Release -o out
+# 5. Сборка и публикация
+RUN dotnet publish -c Release -o /app/publish
 
-# Используем runtime-образ для запуска
+# 6. Runtime-образ
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
-COPY --from=build /app/out .
+COPY --from=build /app/publish .
 
 ENV ASPNETCORE_URLS=http://+:10000
 EXPOSE 10000
 
-ENTRYPOINT ["dotnet", "NoteManeger.dll"]
+ENTRYPOINT ["dotnet", "NoteManager.dll"]
