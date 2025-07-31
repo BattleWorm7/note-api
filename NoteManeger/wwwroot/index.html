@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>NoteManeger</title>
+</head>
+<body>
+    <style>
+        :root{
+            --primary: #4361ee;
+            --secondly: #3f37c9;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --grey: #6c757d;
+        }
+        .{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body {
+            font-family: Arial;
+            background-color: #f5f7ff;
+            color: var(--dark);
+            padding: 20px;
+        }
+        .container{
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        h1{
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        .Note-box{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        .noteInp{
+            flex: 1;
+            padding: 12px 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        .noteInp:focus{
+            border-color: var(--primary);
+            outline:none;
+            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+        }
+        .noteBtn{
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0 25px;
+            border-radius: 8px;
+            cursor:pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition:all 0.3s;
+        }
+        .btnNot {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0 25px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s;
+            margin: 5px;
+        }
+        .btnNot:hover {
+            background: var(--secondly);
+            transform: translateY(-4px);
+        }
+        .noteBtn:hover {
+            background: var(--secondly);
+            transform: translateY(-2px);
+        }
+        .result-notes{
+            border:2px solid #e9ecef;
+            border-radius: 10px;
+            overflow:hidden;
+        }
+        #notes {
+            margin-top: 20px;
+        }
+
+        .note {
+            background: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-left: 4px solid #007bff;
+        }
+
+            .note button {
+                float: right;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+    </style>
+    <div class="container">
+        <h1>Мои Заметки</h1>
+        <div class="Note-box">
+            <input type="text" id="noteInput" class="noteInp" placeholder="Введите заметку" />
+            <button class="noteBtn" onclick="AddNote()">Добавить</button>
+        </div>
+        <div id="notes" class="result-notes"></div>
+    </div>
+    
+    <script>
+        const apiUrl = "http://localhost:5054/api/note";
+
+        async function loadNotes() {
+            const res = await fetch(apiUrl);
+            const notes = await res.json();
+            const container = document.getElementById("notes");
+            container.innerHTML = "";
+
+            notes.forEach(note => {
+                const div = document.createElement("div");
+                div.className = "note";
+                div.innerHTML = `
+            ${note.text} <small>(${new Date(note.createdAt).toLocaleString()})</small>
+            <button onclick="editNote(${note.id}, '${note.text.replace(/'/g, "//'")}')" class="btnNot">Изменить</button>
+            <button onclick="deleteNote(${note.id})" class="btnNot">Удалить</button>
+        `;
+                container.appendChild(div);
+            });
+        }
+        async function editNote(id, oldText) {
+            const newText = prompt("Изменить заметку:", oldText);
+            if (!newText || newText.trim() === "") return;
+
+            await fetch(`${apiUrl}/${id}`, {
+                method: "PUT",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ Text: newText })
+            });
+            loadNotes();
+        }
+        async function AddNote() {
+            const input = document.getElementById("noteInput");
+            const text = input.value.trim();
+            if (!text) return;
+
+            await fetch(apiUrl, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ text })
+            });
+            input.value = "";
+            loadNotes();
+        }
+        
+        async function deleteNote(id) {
+            await fetch(`${apiUrl}/${id}`, { method: "DELETE" });
+            loadNotes();
+        }
+        loadNotes();
+    </script>
+</body>
+</html>

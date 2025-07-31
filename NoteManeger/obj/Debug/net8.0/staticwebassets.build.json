@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "Hash": "tlcMajOGVrdvXi6n90vatcdebxJ4pAYxrC7VnS1y3e4=",
+  "Source": "NoteManeger",
+  "BasePath": "_content/NoteManeger",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "NoteManeger\\wwwroot",
+      "Source": "NoteManeger",
+      "ContentRoot": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\wwwroot\\",
+      "BasePath": "_content/NoteManeger",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\wwwroot\\index.html",
+      "SourceId": "NoteManeger",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\wwwroot\\",
+      "BasePath": "_content/NoteManeger",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kgxrcnhet0",
+      "Integrity": "3EW/T4LjU4KL3j782mx4/jp0VeuLo8Irf3+tlv2whJc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5378"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3EW/T4LjU4KL3j782mx4/jp0VeuLo8Irf3+tlv2whJc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Jul 2025 14:00:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3EW/T4LjU4KL3j782mx4/jp0VeuLo8Irf3+tlv2whJc="
+        }
+      ]
+    },
+    {
+      "Route": "index.kgxrcnhet0.html",
+      "AssetFile": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5378"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3EW/T4LjU4KL3j782mx4/jp0VeuLo8Irf3+tlv2whJc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Jul 2025 14:00:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kgxrcnhet0"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3EW/T4LjU4KL3j782mx4/jp0VeuLo8Irf3+tlv2whJc="
+        }
+      ]
+    }
+  ]
+}

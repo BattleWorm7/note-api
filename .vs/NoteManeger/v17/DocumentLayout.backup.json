@@ -1,0 +1,141 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC\\source\\repos\\NoteManeger\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{27840B18-06DB-4B92-B3EC-4A96F88B3B6B}|NoteManeger\\NoteManeger.csproj|c:\\users\\pc\\source\\repos\\notemaneger\\notemaneger\\models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27840B18-06DB-4B92-B3EC-4A96F88B3B6B}|NoteManeger\\NoteManeger.csproj|solutionrelative:notemaneger\\models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27840B18-06DB-4B92-B3EC-4A96F88B3B6B}|NoteManeger\\NoteManeger.csproj|c:\\users\\pc\\source\\repos\\notemaneger\\notemaneger\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{27840B18-06DB-4B92-B3EC-4A96F88B3B6B}|NoteManeger\\NoteManeger.csproj|solutionrelative:notemaneger\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27840B18-06DB-4B92-B3EC-4A96F88B3B6B}|NoteManeger\\NoteManeger.csproj|c:\\users\\pc\\source\\repos\\notemaneger\\notemaneger\\controllers\\notecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27840B18-06DB-4B92-B3EC-4A96F88B3B6B}|NoteManeger\\NoteManeger.csproj|solutionrelative:notemaneger\\controllers\\notecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27840B18-06DB-4B92-B3EC-4A96F88B3B6B}|NoteManeger\\NoteManeger.csproj|c:\\users\\pc\\source\\repos\\notemaneger\\notemaneger\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{27840B18-06DB-4B92-B3EC-4A96F88B3B6B}|NoteManeger\\NoteManeger.csproj|solutionrelative:notemaneger\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27840B18-06DB-4B92-B3EC-4A96F88B3B6B}|NoteManeger\\NoteManeger.csproj|c:\\users\\pc\\source\\repos\\notemaneger\\notemaneger\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{27840B18-06DB-4B92-B3EC-4A96F88B3B6B}|NoteManeger\\NoteManeger.csproj|solutionrelative:notemaneger\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27840B18-06DB-4B92-B3EC-4A96F88B3B6B}|NoteManeger\\NoteManeger.csproj|c:\\users\\pc\\source\\repos\\notemaneger\\notemaneger\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27840B18-06DB-4B92-B3EC-4A96F88B3B6B}|NoteManeger\\NoteManeger.csproj|solutionrelative:notemaneger\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27840B18-06DB-4B92-B3EC-4A96F88B3B6B}|NoteManeger\\NoteManeger.csproj|c:\\users\\pc\\source\\repos\\notemaneger\\notemaneger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27840B18-06DB-4B92-B3EC-4A96F88B3B6B}|NoteManeger\\NoteManeger.csproj|solutionrelative:notemaneger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\appsettings.json",
+              "RelativeDocumentMoniker": "NoteManeger\\appsettings.json",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\appsettings.json",
+              "RelativeToolTip": "NoteManeger\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-24T18:48:51.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "NoteManeger\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "NoteManeger\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T18:44:58.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Note.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\Models\\Note.cs",
+              "RelativeDocumentMoniker": "NoteManeger\\Models\\Note.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\Models\\Note.cs",
+              "RelativeToolTip": "NoteManeger\\Models\\Note.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T18:43:08.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NoteController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\Controllers\\NoteController.cs",
+              "RelativeDocumentMoniker": "NoteManeger\\Controllers\\NoteController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\Controllers\\NoteController.cs",
+              "RelativeToolTip": "NoteManeger\\Controllers\\NoteController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwBgAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T18:42:09.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "NoteManeger\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\wwwroot\\index.html",
+              "RelativeToolTip": "NoteManeger\\wwwroot\\index.html",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAEsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-07-24T18:40:14.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\Program.cs",
+              "RelativeDocumentMoniker": "NoteManeger\\Program.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\Program.cs",
+              "RelativeToolTip": "NoteManeger\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T18:38:45.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "NoteManeger\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\NoteManeger\\NoteManeger\\Properties\\launchSettings.json",
+              "RelativeToolTip": "NoteManeger\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-24T18:38:27.09Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
